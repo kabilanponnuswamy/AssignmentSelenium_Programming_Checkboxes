@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">  
-<suite name="Suite">  
-	<groups>
-	<run>
-	<include name="SmokeTest"/>
-	</run>
-	</groups>
-  <test name="OrangeHRMCart Login"> 
+<suite name="Suite" parallel="tests">  
+	<test name="ChromeBrowser"> 
 	  <classes>  
-      <class name="TestCasesWithinGroups.OrangeHRMCartLogin"/>      
-    </classes>  
-  </test>
-    <test name="EasyCalc Login"> 
-	  <classes>  
-      <class name="TestCasesWithinGroups.EasyCalcLogin"/>      
-    </classes>  
-  </test>
-    <test name="DemoOpenCart Login"> 
-	  <classes>  
-      <class name="TestCasesWithinGroups.DemoOpenCartLogin"/>      
-    </classes>  
-  </test>
+      <class name="DataProvider_Holland.DataProvider_HollandBarrett"/>      
+    </classes> 
+    </test> 
 </suite> 
