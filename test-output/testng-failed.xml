@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" name="EdgeBrowser(failed)" parallel="tests">
-    <parameter name="browserName" value="edge"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DataProvider_Holland.DataProvider_HollandBarrett">
+      <class name="FBDataDrivenUsingCSV.FB_DDT_CSV">
         <methods>
-          <include name="tearDown"/>
-          <include name="browser"/>
+          <include name="testDPCSV"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- DataProvider_Holland.DataProvider_HollandBarrett -->
+      </class> <!-- FBDataDrivenUsingCSV.FB_DDT_CSV -->
     </classes>
-  </test> <!-- EdgeBrowser(failed) -->
-  <test thread-count="5" name="ChromeBrowser(failed)" parallel="tests">
-    <parameter name="browserName" value="chrome"/>
-    <classes>
-      <class name="DataProvider_Holland.DataProvider_HollandBarrett">
-        <methods>
-          <include name="tearDown"/>
-          <include name="browser"/>
-        </methods>
-      </class> <!-- DataProvider_Holland.DataProvider_HollandBarrett -->
-    </classes>
-  </test> <!-- ChromeBrowser(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

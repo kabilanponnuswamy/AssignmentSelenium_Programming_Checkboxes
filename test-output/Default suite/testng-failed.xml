@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Food_CheckBoxes.Food_TestCheckBox">
+      <class name="FBDataDrivenUsingCSV.FB_DDT_CSV">
         <methods>
-          <include name="testCheckBoxBtn"/>
+          <include name="testDPCSV"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Food_CheckBoxes.Food_TestCheckBox -->
+      </class> <!-- FBDataDrivenUsingCSV.FB_DDT_CSV -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
